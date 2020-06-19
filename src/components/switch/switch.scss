@@ -1,0 +1,91 @@
+@import "switch.vars";
+
+:host {
+  display: inline-block;
+  outline: none;
+  .outer-wrapper {
+    display: inline-block;
+    padding: var(--border-width);
+    border-radius: calc( (var(--inner-height) + var(--border-width) * 2) / 2 );
+    background: var(--background-color);
+    transition: background-color 200ms ease;
+
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .label-wrapper {
+    font-size: var(--label-font-size);
+    line-height: var(--label-line-height);
+    color: var(--label-color);
+    &.left {
+      margin-right: var(--label-distance);
+    }
+    &.right {
+      margin-left: var(--label-distance);
+    }
+  }
+  .helper-wrapper {
+    font-size: var(--helper-font-size);
+    color: var(--helper-color);
+    line-height: var(--helper-line-height);
+    &.left {
+      text-align: left;
+    }
+    &.right {
+      text-align: right;
+    }
+  }
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+  .content {
+    height: var(--inner-height);
+    width: calc( var(--inner-height) * 2 );
+    border-radius: calc( var(--inner-height) / 2 );
+    background: var(--background-color);
+    //border: 1px solid var(--background-color);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 200ms ease, box-shadow 240ms ease;
+    position: relative;
+    box-shadow: rgba(var(--shadow-color), 0.5) 0 0 0 0;
+  }
+  &.has-focus .content{
+    box-shadow: rgba(var(--shadow-color), 0.5) 0 0 0 3px;
+  }
+  .knob {
+    position: absolute;
+    height: calc(var(--inner-height) - ((var(--knob-margin)) * 2));
+    width: calc(var(--inner-height) - ((var(--knob-margin)) * 2));
+    background-color: var(--knob-color);
+    top: var(--knob-margin);
+    bottom: var(--knob-margin);
+    left: var(--knob-margin);
+    transition: left ease 200ms;
+    border-radius: 100%;
+  }
+  .icon {
+    position: absolute;
+    padding: 0;
+    height: calc(var(--inner-height) - ((var(--knob-margin)) * 2));
+    width: calc(var(--inner-height) - ((var(--knob-margin)) * 2));
+    top: var(--knob-margin);
+    bottom: var(--knob-margin);
+    color: var(--icon-color);
+    stroke-width: var(--icon-stroke-width);
+    left: calc(var(--knob-margin) + var(--inner-height));
+  }
+  &.checked {
+    .knob {
+      left: calc(var(--knob-margin) + var(--inner-height));
+    }
+    .icon {
+      left: var(--knob-margin);
+    }
+  }
+}

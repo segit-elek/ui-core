@@ -1,0 +1,10 @@
+@import 'menu-divider.vars';
+
+div {
+  display: block;
+  background: var(--color);
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+  height: var(--height);
+  width: 100%;
+}

@@ -1,0 +1,30 @@
+:host {
+  --header-background-color: var(--section-header-background-color);
+  --header-color: var(--section-header-color);
+  --header-background-color-dark: var(--section-header-background-color-dark);
+  --collapser-color: var(--section-collapser-color);
+  --header-shadow: var(--section-header-shadow);
+  --header-border-radius: var(--section-header-border-radius);
+  --header-font-weight: var(--section-header-font-weight);
+
+  --header-font-size-small: var(--section-header-font-size-small);
+  --header-padding-small: var(--section-header-padding-small);
+  --body-padding-small: var(--section-body-padding-small);
+  --collapser-size-small: var(--section-collapser-size-small);
+  --collapser-margin-small: var(--section-collapser-margin-small);
+  --collapser-stroke-small: var(--section-collapser-stroke-small);
+
+  --header-font-size-medium: var(--section-header-font-size-medium);
+  --header-padding-medium: var(--section-header-padding-medium);
+  --body-padding-medium: var(--section-body-padding-medium);
+  --collapser-size-medium: var(--section-collapser-size-medium);
+  --collapser-margin-medium: var(--section-collapser-margin-medium);
+  --collapser-stroke-medium: var(--section-collapser-stroke-medium);
+
+  --header-font-size-large: var(--section-header-font-size-large);
+  --header-padding-large: var(--section-header-padding-large);
+  --body-padding-large: var(--section-body-padding-large);
+  --collapser-size-large: var(--section-collapser-size-large);
+  --collapser-margin-large: var(--section-collapser-margin-large);
+  --collapser-stroke-large: var(--section-collapser-stroke-large);
+}

@@ -1,0 +1,19 @@
+:host {
+  display: inline-block;
+  position: relative;
+
+  .dropdown-wrapper {
+    display: none;
+  }
+
+  eui-dropdown[is-open] {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: inline-block;
+  }
+}
+:host([dropdown-alignment='right']) eui-dropdown {
+  left: auto;
+  right: 0;
+}

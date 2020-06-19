@@ -1,0 +1,41 @@
+
+
+:host {
+  --padding-left-small: var(--input-padding-left-small);
+  --padding-right-small: var(--input-padding-right-small);
+  --padding-top-small: var(--input-padding-top-small);
+  --padding-bottom-small: var(--input-padding-bottom-small);
+  --padding-left-medium: var(--input-padding-left-medium);
+  --padding-right-medium: var(--input-padding-right-medium);
+  --padding-top-medium: var(--input-padding-top-medium);
+  --padding-bottom-medium: var(--input-padding-bottom-medium);
+  --padding-left-large: var(--input-padding-left-large);
+  --padding-right-large: var(--input-padding-right-large);
+  --padding-top-large: var(--input-padding-top-large);
+  --padding-bottom-large: var(--input-padding-bottom-large);
+
+  --border-radius: var(--input-border-radius);
+
+  --font-size-small: var(--input-font-size-small);
+  --line-height-small: var(--input-line-height-small);
+  --font-size-medium: var(--input-font-size-medium);
+  --line-height-medium: var(--input-line-height-medium);
+  --font-size-large: var(--input-font-size-large);
+  --line-height-large: var(--input-line-height-large);
+
+  --shadow-color: var(--input-shadow-color);
+  --shadow-color-hover: var(--input-shadow-color-hover);
+  --shadow-color-focus: var(--input-shadow-color-focus);
+  --shadow-color-disabled: var(--input-shadow-color-disabled);
+  --shadow-color-error: var(--input-shadow-color-error);
+  --shadow-color-error-focused: var(--input-shadow-color-error-focused);
+  --placeholder-color: var(--input-placeholder-color);
+  --color: var(--input-color);
+  --color-disabled: var(--input-color-disabled);
+  --background: var(--input-background);
+  --background-focus: var(--input-background-focus);
+  --background-hover: var(--input-background-hover);
+  --background-disabled: var(--input-background-disabled);
+  --background-error: var(--input-background-error);
+  --background-error-focused: var(--input-background-error-focused);
+}

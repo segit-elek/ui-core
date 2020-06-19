@@ -1,0 +1,89 @@
+@import 'radio.vars';
+
+
+:host {
+  display: flex;
+  font-size: 0;
+  white-space: nowrap;
+  &[disabled]{
+    pointer-events: none;
+  }
+}
+.container {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: var(--padding);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  span.radio-label{
+    font-size: var(--label-font-size);
+  }
+  .radio {
+    position: relative;
+    //margin-right: 10px;
+    display: block;
+    height: var(--checkmark-size);
+    width: var(--checkmark-size);
+    background-color: var(--background);
+    box-shadow: var(--shadow);
+    border-radius: 100%;
+    transition: 200ms all ease-in-out;
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      opacity: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+      width: var(--icon-size);
+      height: var(--icon-size);
+      border-radius: 100%;
+      background: var(--color);
+      -webkit-transform: scale(0.75);
+      -ms-transform: scale(0.75);
+      transform: scale(0.75);
+      transition: 200ms all ease-in-out;
+      transform-origin: 80% 40%;
+    }
+    &:hover {
+      box-shadow: var(--shadow-hover);
+
+    }
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ .radio {
+      background-color: var(--background-checked);
+      &:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+    &:focus ~ .radio{
+      box-shadow: var(--shadow-focus);
+    }
+    &:active ~ .radio{
+      box-shadow: var(--shadow-active);
+    }
+  }
+
+
+}
+
+:host(.has-label) .radio{
+  margin-right: var(--distance);
+}

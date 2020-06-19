@@ -1,0 +1,675 @@
+@import 'colors.const';
+
+html {
+  /* ToDo: Replace color */
+
+  --line-height-small-10: 14px;
+  --line-height-small-12: 16px;
+  --line-height-small-13: 18px;
+  --line-height-small-14: 18px;
+  --line-height-small-15: 22px;
+  --line-height-small-16: 22px;
+  --line-height-small-18: 24px;
+  --line-height-small-20: 26px;
+  --line-height-small-24: 32px;
+  --line-height-small-28: 38px;
+  --line-height-small-32: 44px;
+  --line-height-small-36: 48px;
+  --line-height-small-42: 56px;
+  --line-height-small-48: 64px;
+  --line-height-small-54: 72px;
+  --line-height-small-60: 82px;
+  --line-height-small-68: 92px;
+  --line-height-small-76: 104px;
+  --line-height-small-84: 114px;
+  --line-height-small-92: 126px;
+
+  --line-height-medium-10: 16px;
+  --line-height-medium-12: 18px;
+  --line-height-medium-13: 20px;
+  --line-height-medium-14: 20px;
+  --line-height-medium-15: 24px;
+  --line-height-medium-16: 24px;
+  --line-height-medium-18: 26px;
+  --line-height-medium-20: 28px;
+  --line-height-medium-24: 34px;
+  --line-height-medium-28: 40px;
+  --line-height-medium-32: 48px;
+  --line-height-medium-36: 52px;
+  --line-height-medium-42: 62px;
+  --line-height-medium-48: 70px;
+  --line-height-medium-54: 80px;
+  --line-height-medium-60: 90px;
+  --line-height-medium-68: 100px;
+  --line-height-medium-76: 112px;
+  --line-height-medium-84: 124px;
+  --line-height-medium-92: 136px;
+
+  --line-height-large-10: 18px;
+  --line-height-large-12: 20px;
+  --line-height-large-13: 22px;
+  --line-height-large-14: 22px;
+  --line-height-large-15: 26px;
+  --line-height-large-16: 26px;
+  --line-height-large-18: 28px;
+  --line-height-large-20: 30px;
+  --line-height-large-24: 36px;
+  --line-height-large-28: 42px;
+  --line-height-large-32: 52px;
+  --line-height-large-36: 56px;
+  --line-height-large-42: 68px;
+  --line-height-large-48: 76px;
+  --line-height-large-54: 88px;
+  --line-height-large-60: 98px;
+  --line-height-large-68: 108px;
+  --line-height-large-76: 120px;
+  --line-height-large-84: 134px;
+  --line-height-large-92: 146px;
+
+  --elevation-1: 0 0 1px 0 rgba(57, 57, 67, 0.2), 0 1px 2px 0 rgba(57, 57, 67, 0.12);
+  --elevation-2: 0 0 2px 0 rgba(57, 57, 67, 0.2), 0 2px 2px 0 rgba(57, 57, 67, 0.12);
+  --elevation-3: 0 1px 3px 0 rgba(57, 57, 67, 0.2), 0 2px 3px 0 rgba(57, 57, 67, 0.16);
+  --elevation-4: 0 1px 4px 0 rgba(57, 57, 67, 0.2), 0 3px 4px 0 rgba(57, 57, 67, 0.12);
+  --elevation-5: 0 2px 4px 0 rgba(57, 57, 67, 0.2), 0 3px 5px 0 rgba(57, 57, 67, 0.12);
+  --elevation-6: 0 3px 4px 0 rgba(57, 57, 67, 0.2), 0 2px 6px 0 rgba(57, 57, 67, 0.12);
+  --elevation-7: 0 4px 5px 0 rgba(57, 57, 67, 0.2), 0 3px 7px 0 rgba(57, 57, 67, 0.16);
+  --elevation-8: 0 4px 6px 0 rgba(57, 57, 67, 0.2), 0 3px 8px 0 rgba(57, 57, 67, 0.12);
+  --elevation-9: 0 5px 6px 0 rgba(57, 57, 67, 0.2), 0 4px 9px 0 rgba(57, 57, 67, 0.12);
+  --elevation-10: 0 5px 8px 0 rgba(57, 57, 67, 0.2), 0 5px 10px 0 rgba(57, 57, 67, 0.12);
+  --elevation-11: 0 6px 11px 0 rgba(57, 57, 67, 0.24), 0 3px 7px 0 rgba(57, 57, 67, 0.16);
+  --elevation-12: 0 8px 12px 0 rgba(57, 57, 67, 0.24), 0 4px 8px 0 rgba(57, 57, 67, 0.16);
+  --elevation-13: 0 8px 12px 0 rgba(57, 57, 67, 0.24), 0 4px 13px 0 rgba(57, 57, 67, 0.16);
+  --elevation-14: 0 6px 12px 0 rgba(57, 57, 67, 0.24), 0 12px 14px 0 rgba(57, 57, 67, 0.16);
+  --elevation-15: 0 8px 15px 0 rgba(57, 57, 67, 0.24), 0 15px 24px 0 rgba(57, 57, 67, 0.16);
+  --elevation-16: 0 6px 16px 0 rgba(57, 57, 67, 0.24), 0 16px 32px 0 rgba(57, 57, 67, 0.16);
+
+  /* Button Variables */
+  /* Button Variables */
+  --button-border-radius: 3px;
+  --button-border-width: 1px;
+  --button-font-weight: 400;
+  --button-font-style: normal;
+  --button-font-stretch: normal;
+  --button-letter-spacing: normal;
+  --button-icon-stroke-width: 2px;
+
+  --button-focus-shadow-color: var(--blue-3);
+
+  --button-primary-color: var(--white-color);
+  --button-primary-color-hover: var(--white-color);
+  --button-primary-color-active: var(--white-color);
+  --button-primary-color-disabled: var(--gray-4-color);
+
+  --button-primary-background: var(--blue-6-color);
+  --button-primary-background-hover: var(--blue-5-color);
+  --button-primary-background-active: var(--blue-7-color);
+  --button-primary-background-disabled: var(--gray-2-color);
+
+  --button-primary-border: var(--blue-6-color);
+  --button-primary-border-hover: var(--blue-5-color);
+  --button-primary-border-active: var(--blue-7-color);
+  --button-primary-border-disabled: var(--gray-2-color);
+
+  --button-primary-shadow: rgba(var(--gray-8), 0) 0px 0px 0px 0px;
+  --button-primary-shadow-hover: 0px 1px 2px rgba(var(--gray-8), 0.04), 0px 1px 2px rgba(60, 65, 92, 0.08);
+  --button-primary-shadow-active: 0px 0px 0px 0px rgba(var(--gray-8), 0) ;
+  --button-primary-shadow-disabled: 0px 0px 0px 0px rgba(var(--gray-8), 0) ;
+
+  /* Outlined Button Variables */
+
+  --button-outlined-color: var(--gray-7-color);
+  --button-outlined-color-hover: var(--gray-7-color);
+  --button-outlined-color-active: var(--gray-7-color);
+  --button-outlined-color-disabled: var(--gray-3-color);
+
+  --button-outlined-background: var(--white-color);
+  --button-outlined-background-hover: var(--white-color);
+  --button-outlined-background-active: var(--white-color);
+  --button-outlined-background-disabled: var(--gray-1-color);
+
+  --button-outlined-border: rgba(var(--gray-8), 0.16);
+  --button-outlined-border-hover: rgba(var(--gray-8), 0.16);
+  --button-outlined-border-active: rgba(var(--gray-8), 0.16);
+  --button-outlined-border-disabled: rgba(var(--gray-8), 0.16);
+
+  --button-outlined-shadow:  0px 0px 0px 0px rgba(var(--gray-8), 0.04);
+  --button-outlined-shadow-hover: 0px 1px 2px rgba(var(--gray-8), 0.04), 0px 1px 2px rgba(60, 65, 92, 0.08);
+  --button-outlined-shadow-active: 0px 1px 2px rgba(var(--gray-8), 0.04), 0px 1px 1px rgba(60, 65, 92, 0.06);
+  --button-outlined-shadow-disabled:  0px 0px 0px 0px rgba(var(--gray-8), 0.04);
+
+  /* Text Button Variables */
+
+  --button-text-color: var(--gray-8-color);
+  --button-text-color-hover: var(--gray-8-color);
+  --button-text-color-active: var(--gray-8-color);
+  --button-text-color-disabled: var(--gray-3-color);
+
+  --button-text-background: transparent;
+  --button-text-background-hover: transparent;
+  --button-text-background-active: transparent;
+  --button-text-background-disabled: transparent;
+
+  --button-text-border: transparent;
+  --button-text-border-hover: transparent;
+  --button-text-border-active: transparent;
+  --button-text-border-disabled: transparent;
+
+  --button-text-shadow: rgba(var(--gray-8), 0.04) 0px 0px 0px 0px;
+  --button-text-shadow-hover: rgba(var(--gray-8), 0.04) 0px 0px 0px 0px;
+  --button-text-shadow-active: rgba(var(--gray-8), 0.04) 0px 0px 0px 0px;
+  --button-text-shadow-disabled: rgba(var(--gray-8), 0.04) 0px 0px 0px 0px;
+
+  /* Brand Button Variables */
+
+  --button-brand-color: var(--blue-6-color);
+  --button-brand-color-hover: var(--blue-5-color);
+  --button-brand-color-active: var(--blue-7-color);
+  --button-brand-color-disabled: var(--gray-3-color);
+
+  --button-brand-background: var(--white-color);
+  --button-brand-background-hover: var(--white-color);
+  --button-brand-background-active: var(--white-color);
+  --button-brand-background-disabled: var(--white-color);
+
+  --button-brand-border: var(--blue-6-color);
+  --button-brand-border-hover: var(--blue-5-color);
+  --button-brand-border-active: var(--blue-7-color);
+  --button-brand-border-disabled: var(--gray-3-color);
+
+  --button-brand-shadow:  0px 0px 0px 0px rgba(var(--gray-8), 0.04);
+  --button-brand-shadow-hover: 0px 1px 2px rgba(var(--gray-8), 0.04), 0px 1px 2px rgba(60, 65, 92, 0.08);;
+  --button-brand-shadow-active: 0px 1px 2px rgba(var(--gray-8), 0.04), 0px 1px 1px rgba(60, 65, 92, 0.06);
+  --button-brand-shadow-disabled: 0px 0px 0px 0px rgba(var(--gray-8), 0.04);
+
+  /* Button Size Variables */
+
+  --button-small-padding: 2px 7px;
+  --button-small-font-size: 14px;
+  --button-small-line-height: 18px;
+  --button-icon-size-small: 18px;
+  --button-icon-padding-small: 3px;
+  --button-icon-distance-outer-small: -3px;
+  --button-icon-distance-inner-small: 2px;
+  --button-type-icon-padding-small: 2px;
+
+  --button-medium-padding: 4px 9px;
+  --button-medium-font-size: 14px;
+  --button-medium-line-height: 20px;
+  --button-icon-size-medium: 20px;
+  --button-icon-padding-medium: 3px;
+  --button-icon-distance-outer-medium: -5px;
+  --button-icon-distance-inner-medium: 4px;
+  --button-type-icon-padding-medium: 4px;
+
+  --button-large-padding: 8px 10px;
+  --button-large-font-size: 16px;
+  --button-large-line-height: 18px;
+  --button-icon-size-large: 24px;
+  --button-icon-padding-large: 3px;
+  --button-icon-distance-outer-large: -5px;
+  --button-icon-distance-inner-large: 6px;
+  --button-type-icon-padding-large: 5px;
+
+  /* card */
+
+  --card-background-color: #FFFFFF;
+  --card-border-radius: 4px;
+  --card-box-shadow: 0px 1px 1px rgba(var(--black), 0.12), 0px 2px 5px rgba(var(--gray-8), 0.12);
+
+  /* checkbox */
+
+  --checkbox-distance-small: 6px;
+  --checkbox-distance-medium: 6px;
+  --checkbox-distance-large: 6px;
+
+  --checkbox-border-width-small: 1px;
+  --checkbox-border-width-medium: 1px;
+  --checkbox-border-width-large: 1px;
+
+
+  --checkbox-padding-small: 3px;
+  --checkbox-padding-medium: 3px;
+  --checkbox-padding-large: 3px;
+
+  --radio-icon-size-small: 5px;
+  --radio-icon-size-medium: 5px;
+  --radio-icon-size-large: 5px;
+
+  --checkbox-checkmark-size-small: 14px;
+  --checkbox-checkmark-size-medium: 16px;
+  --checkbox-checkmark-size-large: 18px;
+
+  --checkbox-border-radius: 3px;
+
+  --checkbox-checkmark-padding-small: 1px;
+  --checkbox-checkmark-padding-medium: 1px;
+  --checkbox-checkmark-padding-large: 1px;
+
+  --checkbox-checkmark-stroke-small: 3px;
+  --checkbox-checkmark-stroke-medium: 3px;
+  --checkbox-checkmark-stroke-large: 3px;
+
+  --checkbox-label-font-size-small: 14px;
+  --checkbox-label-font-size-medium: 14px;
+  --checkbox-label-font-size-large: 16px;
+
+  --checkbox-background: var(--white-color);
+  --checkbox-background-checked: var(--blue-6-color);
+  --checkbox-background-disabled-checked: var(--gray-2-color);
+  --checkbox-background-disabled: var(--gray-1-color);
+  --checkbox-background-partial: var(--blue-6-color);
+
+  --checkbox-border-color: rgba(var(--gray-8), 0.16);
+  --checkbox-border-color-checked: var(--blue-6-color);
+  --checkbox-border-color-disabled: rgba(var(--gray-8), 0.16);
+  --checkbox-border-color-disabled-checked: var(--gray-2-color);
+  --checkbox-border-color-partial: var(--blue-6-color);
+
+  --checkbox-color: var(--white-color);
+  --checkbox-color-disabled: var(--gray-4-color);
+
+  --checkbox-shadow-hover: 0px 1px 2px rgba(60, 66, 87, 0.04), 0px 1px 2px rgba(60, 65, 92, 0.08);
+
+  --checkbox-focus-shadow-color: var(--blue-3);
+
+  /* radio Variables */
+  // TODO: size handling for checkbox
+  --checkbox-radio-distance-small: 6px;
+  --checkbox-radio-distance-medium: 6px;
+  --checkbox-radio-distance-large: 6px;
+
+  --checkbox-radio-padding-small: 3px;
+  --checkbox-radio-padding-medium: 3px;
+  --checkbox-radio-padding-large: 3px;
+
+  --checkbox-radio-checkmark-size-small: 16px;
+  --checkbox-radio-checkmark-size-medium: 18px;
+  --checkbox-radio-checkmark-size-large: 20px;
+
+  --checkbox-radio-label-font-size-small: 14px;
+  --checkbox-radio-label-font-size-medium: 14px;
+  --checkbox-radio-label-font-size-large: 16px;
+
+  --checkbox-radio-background: var(--white-color);
+  --checkbox-radio-background-checked: var(--blue-6-color);
+  --checkbox-radio-background-disabled: var(--gray-2-color);
+  --checkbox-radio-color: var(--white-color);
+  --checkbox-radio-color-disabled: var(--gray-4-color);
+  --checkbox-radio-shadow: rgba(var(--gray-9), 0.16) 0px 0px 0px 1px;
+  --checkbox-radio-shadow-hover: rgba(var(--gray-9), 0.16) 0px 0px 0px 1px, rgba(var(--black), 0.12) 0px 1px 1px 0px;
+  --checkbox-radio-shadow-checked-focus: rgba(var(--gray-9), 0.12) 0px 0px 0px 1px, rgba(var(--cyan-5), 0.28) 0px 0px 0px 3px;
+  --checkbox-radio-shadow-checked-active: rgba(var(--gray-9), 0.12) 0px 0px 0px 1px, rgba(var(--cyan-5), 0.28) 0px 0px 0px 3px;
+  /* ToDo: Replace color */
+  --checkbox-radio-shadow-checked-error: rgba(205, 44, 44, 0.24) 0px 0px 0px 1px, rgba(205, 44, 44, 0.28) 0px 0px 0px 3px;
+
+
+  /* chip */
+
+  --chip-border-color: var(--gray-2-color);
+  --chip-background-color: var(--white-color);
+  --chip-background-color-active: var(--gray-1-color);
+  --chip-background-color-disabled: var(--gray-1-color);
+
+  --chip-label-color: var(--gray-7-color);
+  --chip-label-color-disabled: var(--gray-4-color);
+  --chip-label-color-hover: var(--gray-9-color);
+  --chip-label-color-active: var(--gray-9-color);
+
+  /* Drawer */
+
+  --drawer-background-color: var(--white-color);
+  --drawer-overlay-background-color: var(--black);
+  --drawer-main-padding: 20px;
+  --drawer-squish-padding: 20px;
+  --drawer-side-width: 200px;
+
+  /* dropdown */
+
+  --dropdown-background: var(--white-color);
+  --dropdown-box-shadow: 0 2px 4px 0 rgba(57, 57, 67, 0.2), 0 3px 5px 0 rgba(57, 57, 67, 0.12);
+  --dropdown-padding: 2px 0;
+  --dropdown-border-radius: 3px;
+  --dropdown-font-size-small: 14px;
+  --dropdown-font-size-medium: 14px;
+  --dropdown-font-size-large: 14px;
+
+  /* Icon properties */
+
+  --icon-height-small: 19px;
+  --icon-height-medium: 24px;
+  --icon-height-large: 27px;
+
+  --icon-width-small: 19px;
+  --icon-width-medium: 24px;
+  --icon-width-large: 27px;
+
+  --icon-padding-small: 2px;
+  --icon-padding-medium: 3px;
+  --icon-padding-large: 3px;
+
+  --icon-stroke-width-small: 2px;
+  --icon-stroke-width-medium: 2px;
+  --icon-stroke-width-large: 2px;
+
+  // Field
+  --field-label-line-height-small: var(--line-height-small-12);
+  --field-error-line-height-small: var(--line-height-small-12);
+  --field-label-line-height-medium: var(--line-height-small-13);
+  --field-error-line-height-medium: var(--line-height-small-12);
+  --field-label-line-height-large: var(--line-height-small-14);
+  --field-error-line-height-large: var(--line-height-small-14);
+
+  --field-padding: 1px;
+
+  --field-emphasised-label-font-weight: 500;
+
+  --field-label-font-size-small: 12px;
+  --field-error-font-size-small: 12px;
+  --field-label-font-size-medium: 13px;
+  --field-error-font-size-medium: 12px;
+  --field-label-font-size-large: 14px;
+  --field-error-font-size-large: 14px;
+  --field-label-distance-small: 3px;
+  --field-error-distance-small: 2px;
+  --field-label-distance-medium: 4px;
+  --field-error-distance-medium: 3px;
+  --field-label-distance-large: 5px;
+  --field-error-distance-large: 4px;
+
+  --field-label-color: var(--gray-9-color);
+  --field-error-color: var(--red-6-color);
+
+  --hover-bg-color: rgba(var(--blue-5-rgb), 0.08);
+
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-supported: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  /* Input */
+
+  --input-shadow-color: rgba(var(--gray-8), 0.16) 0px 0px 0px 1px;
+  --input-shadow-color-hover: rgba(var(--gray-8), 0.16) 0px 0px 0px 1px;
+  --input-shadow-color-focus: rgba(var(--gray-8), 0.16) 0px 0px 0px 1px, rgba(var(--cyan-5), 0.34) 0px 0px 0px 3px;
+  --input-shadow-color-disabled: rgba(var(--gray-8), 0.16) 0px 0px 0px 1px;
+  --input-shadow-color-error: rgba(var(--red-6), 1) 0px 0px 0px 1px;
+  --input-shadow-color-error-focused: rgba(var(--red-6), 0.76) 0px 0px 0px 1px, rgba(var(--red-6), 0.34) 0px 0px 0px 3px;
+  --input-icon-color: var(--gray-5-color);
+  --input-placeholder-color: var(--gray-4-color);
+  --input-color: var(--gray-8-color);
+  --input-color-disabled: var(--gray-3-color);
+  --input-background: var(--white-color);
+  --input-background-focus: var(--white-color);
+  --input-background-hover: var(--white-color);
+  --input-background-disabled: var(--gray-2-color);
+  --input-background-error: var(--white-color);
+  --input-background-error-focused: var(--white-color);
+
+  --input-padding-left-small: 3px;
+  --input-padding-right-small: 3px;
+  --input-padding-top-small: 2px;
+  --input-padding-bottom-small: 2px;
+  --input-padding-left-medium: 4px;
+  --input-padding-right-medium: 4px;
+  --input-padding-top-medium: 4px;
+  --input-padding-bottom-medium: 4px;
+  --input-padding-left-large: 5px;
+  --input-padding-right-large: 5px;
+  --input-padding-top-large: 4px;
+  --input-padding-bottom-large: 4px;
+
+  --input-trailing-content-right-margin-small: 1px;
+  --input-trailing-content-right-margin-medium: 3px;
+  --input-trailing-content-right-margin-large: 5px;
+
+  --input-icon-size-small: 18px;
+  --input-icon-size-medium: 20px;
+  --input-icon-size-large: 24px;
+
+  --input-icon-padding-small: 3px;
+  --input-icon-padding-medium: 3px;
+  --input-icon-padding-large: 4px;
+
+  --input-border-radius: 3px;
+
+  --input-font-size-small: 14px;
+  --input-line-height-small: var(--line-height-small-14);
+  --input-font-size-medium: 14px;
+  --input-line-height-medium: var(--line-height-medium-14);
+  --input-font-size-large: 16px;
+  --input-line-height-large: var(--line-height-large-16);
+
+
+  /* Item counter */
+  // TODO: support sizes
+  --item-counter-color: var(--gray-6-color);
+  --item-counter-color-selected: var(--blue-6-color);
+  --item-counter-background-selected: var(--gray-2-color);
+
+  --item-counter-font-size-small: 13px;
+  --item-counter-line-height-small: 15px;
+  --item-counter-selected-padding-small:  3px 5px;
+  --item-counter-item-margin-small: 0 5px;
+  --item-counter-selected-margin-small: 0 6px;
+  --item-counter-icon-margin-small: 0 2px;
+  --item-counter-font-size-medium: 13px;
+  --item-counter-line-height-medium: 15px;
+  --item-counter-selected-padding-medium:  3px 5px;
+  --item-counter-item-margin-medium: 0 5px;
+  --item-counter-selected-margin-medium: 0 6px;
+  --item-counter-icon-margin-medium: 0 2px;
+  --item-counter-font-size-large: 13px;
+  --item-counter-line-height-large: 15px;
+  --item-counter-selected-padding-large:  3px 5px;
+  --item-counter-item-margin-large: 0 5px;
+  --item-counter-selected-margin-large: 0 6px;
+  --item-counter-icon-margin-large: 0 2px;
+  --item-counter-font-weight: 600;
+  --item-counter-border-radius: 4px;
+
+  /* menu divider */
+  --menu-divider-color: var(--gray-2-color);
+  --menu-divider-margin: 2px;
+  --menu-divider-height: 1px;
+
+  /* menu header */
+  --menu-header-color: var(--gray-5-color);
+  //TODO: support sizes
+  --menu-header-height-small: 28px;
+  --menu-header-padding-small: 7px 12px;
+  --menu-header-font-size-small: 10px;
+  --menu-header-letter-spacing-small: 1px;
+  --menu-header-height-medium: 28px;
+  --menu-header-padding-medium: 7px 12px;
+  --menu-header-font-size-medium: 10px;
+  --menu-header-letter-spacing-medium: 1px;
+  --menu-header-height-large: 28px;
+  --menu-header-padding-large: 7px 12px;
+  --menu-header-font-size-large: 10px;
+  --menu-header-letter-spacing-large: 1px;
+
+  /* menu item */
+
+  --menu-item-active-color: var(--cyan-6-color);
+  --menu-item-color: var(--gray-9-color);
+  --menu-item-hover-background-color: var(--gray-2-color);
+  --menu-item-active-background-color: var(--cyan-1-color);
+  --menu-item-font-weight: 400;
+  //TODO: support sizes
+  --menu-item-padding-small: 7px 12px;
+  --menu-item-font-size-small: 13px;
+  --menu-item-line-height-small: 16px;
+  --menu-item-marker-width-small: 4px;
+  --menu-item-marker-height-small: 2px;
+  --menu-item-padding-medium: 7px 12px;
+  --menu-item-font-size-medium: 13px;
+  --menu-item-line-height-medium: 16px;
+  --menu-item-marker-width-medium: 4px;
+  --menu-item-marker-height-medium: 2px;
+  --menu-item-padding-large: 7px 12px;
+  --menu-item-font-size-large: 13px;
+  --menu-item-line-height-large: 16px;
+  --menu-item-marker-width-large: 4px;
+  --menu-item-marker-height-large: 2px;
+
+  /* menu panel */
+
+  --menu-panel-color: var(--gray-9-color);
+  //TODO: support sizes
+  --menu-panel-padding-small: 0 12px;
+  --menu-panel-title-font-size-small: 12px;
+  --menu-panel-height-small: 28px;
+  --menu-panel-left-margin-small: 5px;
+  --menu-panel-padding-medium: 0 12px;
+  --menu-panel-title-font-size-medium: 12px;
+  --menu-panel-height-medium: 28px;
+  --menu-panel-left-margin-medium: 5px;
+  --menu-panel-padding-large: 0 12px;
+  --menu-panel-title-font-size-large: 12px;
+  --menu-panel-height-large: 28px;
+  --menu-panel-left-margin-large: 5px;
+
+
+  /* pagination */
+
+  --pagination-color: var(--gray-6-color);
+  --pagination-selected-color: var(--gray-7-color);
+  --pagination-selected-background-color: var(--gray-2-color);
+  --pagination-inner-font-weight: 600;
+  --pagination-selected-border-radius: 3px;
+
+  //TODO: support sizes
+  --pagination-selected-margin-small: 0 6px;
+  --pagination-selected-padding-small: 3px 5px;
+  --pagination-font-size-small: 13px;
+  --pagination-line-height-small: 15px;
+  --pagination-all-margin-left-small: 5px;
+  --pagination-icon-margin-small: 0 2px;
+  --pagination-selected-margin-medium: 0 6px;
+  --pagination-selected-padding-medium: 3px 5px;
+  --pagination-font-size-medium: 13px;
+  --pagination-line-height-medium: 15px;
+  --pagination-all-margin-left-medium: 5px;
+  --pagination-icon-margin-medium: 0 2px;
+  --pagination-selected-margin-large: 0 6px;
+  --pagination-selected-padding-large: 3px 5px;
+  --pagination-font-size-large: 13px;
+  --pagination-line-height-large: 15px;
+  --pagination-all-margin-left-large: 5px;
+  --pagination-icon-margin-large: 0 2px;
+
+  /* section */
+
+  --section-header-background-color: var(--gray-1-color);
+  --section-header-background-color-dark: var(--gray-2);
+  --section-header-color: var(--gray-9-color);
+  --section-collapser-color: var(--gray-6-color);
+  --section-header-shadow: 0px 1px 2px rgba(var(--gray-8), 0.04), 0px 1px 1px rgba(var(--gray-8), 0.06); // TODO 60, 65, 92 -> gray-8
+  --section-header-border-radius: 3px;
+  --section-header-font-weight: 500;
+
+  --section-header-font-size-small: 12px;
+  --section-header-padding-small: 6px;
+  --section-body-padding-small: 8px 6px;
+  --section-collapser-size-small: 14px;
+  --section-collapser-margin-small: 4px;
+  --section-collapser-stroke-small: 1.5;
+
+  --section-header-font-size-medium: 12px;
+  --section-header-padding-medium: 9px 6px;
+  --section-body-padding-medium: 8px 6px;
+  --section-collapser-size-medium: 14px;
+  --section-collapser-margin-medium: 4px;
+  --section-collapser-stroke-medium: 1.5;
+
+  --section-header-font-size-large: 12px;
+  --section-header-padding-large: 9px 6px;
+  --section-body-padding-large: 8px 6px;
+  --section-collapser-size-large: 14px;
+  --section-collapser-margin-large: 4px;
+  --section-collapser-stroke-large: 1.5;
+
+  /* select */
+
+  --select-background-color: var(--white-color);
+  --select-color: var(--gray-8-color);
+  --select-placeholder-color: var(--gray-4-color);
+  --select-color-disabled: var(--gray-3-color);
+  --select-shadow-color: rgba(var(--gray-8), 0.16) 0px 0px 0px 1px;
+  --select-shadow-color-hover: rgba(var(--gray-8), 0.16) 0px 0px 0px 1px;
+  --select-shadow-color-focus: rgba(var(--gray-8), 0.16) 0px 0px 0px 1px, rgba(var(--cyan-5), 0.34) 0px 0px 0px 3px; // 58, 151, 212, 0.34 #3A97D4
+  --select-shadow-color-disabled: rgba(var(--gray-8), 0.16) 0px 0px 0px 1px;
+  --select-shadow-color-error: rgba(var(--red-6), 1) 0px 0px 0px 1px;
+  --select-shadow-color-error-focused: rgba(var(--red-6), 0.76) 0px 0px 0px 1px, rgba(var(--red-6), 0.34) 0px 0px 0px 3px;
+  --select-background-color-focus: #fff;
+  --select-background-color-hover: #fff;
+  --select-background-color-disabled: var(--gray-2-color);
+  --select-background-color-error: #fff;
+  --select-background-color-error-focused: #fff;
+  --select-hover-bg-color: rgba(var(--blue-5-rgb), 0.08);
+  --select-icon-color: var(--gray-5-color);
+  --select-icon-color-hover: var(--gray-6-color);
+
+  /* select dropdown content */
+  --select-dropdown-content-max-height: 300px;
+  --select-dropdown-content-loader-size: 20px;
+  /* select dropdown */
+
+  --select-dropdown-filter-color: var(--gray-9-color);
+  --select-dropdown-filter-input-border-color: var(--gray-2-color);
+
+  /* select dropdown option */
+
+
+  --select-dropdown-option-color-default: var(--gray-9-color);
+  --select-dropdown-option-color-active: var(--blue-6-color);
+  --select-dropdown-option-background-hover: rgba(var(--blue-5), 0.08);
+  --select-dropdown-option-color-disabled: var(--gray-3-color);
+
+
+  /* switch */
+  --switch-knob-margin: 1px;
+  --switch-border-width: 1px;
+
+  --switch-inner-height-small: 14px;
+  --switch-inner-height-medium: 22px;
+  --switch-inner-height-large: 30px;
+
+  --switch-shadow-color: var(--blue-3);
+
+  --switch-background-color-default: var(--gray-3-color);
+  --switch-background-color-active: var(--blue-6-color);
+  --switch-background-color-disabled: var(--gray-2-color);
+  --switch-knob-color-default: var(--white-color);
+  --switch-knob-color-disabled: var(--gray-3-color);
+
+  --switch-label-color-default: var(--gray-8-color);
+  --switch-helper-color-default: var(--gray-8-color);
+  --switch-label-color-disabled: var(--gray-3-color);
+  --switch-helper-color-disabled: var(--gray-3-color);
+
+  --switch-icon-color: var(--white-color);
+
+  --switch-icon-stroke-width-small: 1.5;
+  --switch-icon-stroke-width-medium: 1.5;
+  --switch-icon-stroke-width-large: 1.5;
+
+  --switch-label-distance-small: 8px;
+  --switch-label-distance-medium: 8px;
+  --switch-label-distance-large: 8px;
+
+  --switch-label-font-size-small: 14px;
+  --switch-label-line-height-small: 16px;  // TODO was 18px i guess by mistake
+  --switch-helper-font-size-small: 10px;
+  --switch-helper-line-height-small: 14px;
+
+  --switch-label-font-size-medium: 14px;
+  --switch-label-line-height-medium: 16px;  // TODO was 18px i guess by mistake
+  --switch-helper-font-size-medium: 10px;
+  --switch-helper-line-height-medium: 14px;
+
+  --switch-label-font-size-large: 14px;
+  --switch-label-line-height-large: 16px;  // TODO was 18px i guess by mistake
+  --switch-helper-font-size-large: 10px;
+  --switch-helper-line-height-large: 14px;
+
+
+}

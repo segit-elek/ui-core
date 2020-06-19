@@ -1,0 +1,48 @@
+:host {
+  --knob-margin: var(--switch-knob-margin);
+  --border-width: var(--switch-border-width);
+
+  --inner-height-small: var(--switch-inner-height-small);
+  --inner-height-medium: var(--switch-inner-height-medium);
+  --inner-height-large: var(--switch-inner-height-large);
+
+  --shadow-color: var(--switch-shadow-color);
+
+  --background-color-default: var(--switch-background-color-default);
+  --background-color-active: var(--switch-background-color-active);
+  --background-color-disabled: var(--switch-background-color-disabled);
+  --knob-color-default: var(--switch-knob-color-default);
+  --knob-color-disabled: var(--switch-knob-color-disabled);
+
+  --label-color-default: var(--switch-label-color-default);
+  --helper-color-default: var(--switch-helper-color-default);
+  --label-color-disabled: var(--switch-label-color-disabled);
+  --helper-color-disabled: var(--switch-helper-color-disabled);
+
+  --icon-color: var(--switch-icon-color);
+
+  --icon-stroke-width-small: var(--switch-icon-stroke-width-small);
+  --icon-stroke-width-medium: var(--switch-icon-stroke-width-medium);
+  --icon-stroke-width-large: var(--switch-icon-stroke-width-large);
+
+  --label-distance-small: var(--switch-label-distance-small);
+  --label-distance-medium: var(--switch-label-distance-medium);
+  --label-distance-large: var(--switch-label-distance-large);
+
+  --label-font-size-small: var(--switch-label-font-size-small);
+  --label-line-height-small: var(--switch-label-line-height-small);
+  --helper-font-size-small: var(--switch-helper-font-size-small);
+  --helper-line-height-small: var(--switch-helper-line-height-small);
+
+  --label-font-size-medium: var(--switch-label-font-size-medium);
+  --label-line-height-medium: var(--switch-label-line-height-medium);
+  --helper-font-size-medium: var(--switch-helper-font-size-medium);
+  --helper-line-height-medium: var(--switch-helper-line-height-medium);
+
+  --label-font-size-large: var(--switch-label-font-size-large);
+  --label-line-height-large: var(--switch-label-line-height-large);
+  --helper-font-size-large: var(--switch-helper-font-size-large);
+  --helper-line-height-large: var(--switch-helper-line-height-large);
+
+
+}

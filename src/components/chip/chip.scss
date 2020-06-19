@@ -1,0 +1,48 @@
+@import 'chip.vars';
+
+:host {
+  display: inline-flex;
+  font-size: 0;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8.5px;
+  border: solid 1px var(--border-color);
+  background-color: var(--background-color);
+  padding: 2px 6px;
+  white-space: nowrap;
+  .chip-label {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--label-color);
+  }
+}
+:host(:hover){
+  .chip-label {
+    color: var(--label-color-hover);
+  }
+}
+:host(:active), :host(:focus) {
+  background: var(--background-color-active);
+  .chip-label {
+    color: var(--label-color-active);
+  }
+}
+:host([disabled]) {
+  background: var(--background-color-disabled);
+
+  .chip-label {
+    color: var(--label-color-disabled);
+  }
+}
+.leading, .trailing {
+  font-size: 10px;
+
+}
+.trailing {
+  margin-left: auto;
+  justify-self: flex-end;
+}

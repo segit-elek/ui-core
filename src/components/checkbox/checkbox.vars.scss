@@ -1,0 +1,49 @@
+:host {
+  --focus-shadow-color: var(--checkbox-focus-shadow-color);
+
+  --padding-small: var(--checkbox-padding-small);
+  --padding-medium: var(--checkbox-padding-medium);
+  --padding-large: var(--checkbox-padding-large);
+
+  --border-width-small: var(--checkbox-border-width-small);
+  --border-width-medium: var(--checkbox-border-width-medium);
+  --border-width-large: var(--checkbox-border-width-large);
+
+  --label-font-size-small: var(--checkbox-label-font-size-small);
+  --label-font-size-medium: var(--checkbox-label-font-size-medium);
+  --label-font-size-large: var(--checkbox-label-font-size-large);
+
+  --checkmark-size-small: var(--checkbox-checkmark-size-small);
+  --checkmark-size-medium: var(--checkbox-checkmark-size-medium);
+  --checkmark-size-large: var(--checkbox-checkmark-size-large);
+
+  --checkmark-padding-small: var(--checkbox-checkmark-padding-small);
+  --checkmark-padding-medium: var(--checkbox-checkmark-padding-medium);
+  --checkmark-padding-large: var(--checkbox-checkmark-padding-large);
+
+  --checkmark-stroke-small: var(--checkbox-checkmark-stroke-small);
+  --checkmark-stroke-medium: var(--checkbox-checkmark-stroke-medium);
+  --checkmark-stroke-large: var(--checkbox-checkmark-stroke-large);
+
+  --border-radius: var(--checkbox-border-radius);
+
+  --background: var(--checkbox-background);
+  --background-checked: var(--checkbox-background-checked);
+  --background-disabled-checked: var(--checkbox-background-disabled-checked);
+  --background-disabled: var(--checkbox-background-disabled);
+  --background-partial: var(--checkbox-background-partial);
+
+  --border-color-default: var(--checkbox-border-color);
+  --border-color-checked: var(--checkbox-border-color-checked);
+  --border-color-disabled-checked: var(--checkbox-border-color-disabled-checked);
+
+  --shadow-hover: var(--checkbox-shadow-hover);
+
+  --color: var(--checkbox-color);
+  --color-disabled: var(--checkbox-color-disabled);
+
+  --distance-small: var(--checkbox-distance-small);
+  --distance-medium: var(--checkbox-distance-medium);
+  --distance-large: var(--checkbox-distance-large);
+
+}

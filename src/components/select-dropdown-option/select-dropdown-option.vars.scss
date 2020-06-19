@@ -1,0 +1,72 @@
+:host {
+
+  // Option variables
+  --padding-top-option-small: 2px;
+  --padding-bottom-option-small: 2px;
+  --padding-left-option-small: 7px;
+  --padding-right-option-small: 3px;
+  --font-size-option-small: 14px;
+  --line-height-option-small: 18px;
+
+  --padding-top-option-medium: 4px;
+  --padding-bottom-option-medium: 4px;
+  --padding-left-option-medium: 9px;
+  --padding-right-option-medium: 5px;
+  --font-size-option-medium: 14px;
+  --line-height-option-medium: 18px;
+
+  --padding-top-option-large: 4px;
+  --padding-bottom-option-large: 4px;
+  --padding-left-option-large: 11px;
+  --padding-right-option-large: 6px;
+  --font-size-option-large: 16px;
+  --line-height-option-large: 26px;
+
+  --font-style-option: normal;
+  --font-weight-option: normal;
+
+  // Group Title variables
+
+  --padding-top-group-title-small: 3px;
+  --padding-bottom-group-title-small: 3px;
+  --padding-left-group-title-small: 7px;
+  --padding-right-group-title-small: 7px;
+  --font-size-group-title-small: 14px;
+  --line-height-group-title-small: 18px;
+
+  --padding-top-group-title-medium: 6px;
+  --padding-bottom-group-title-medium: 6px;
+  --padding-left-group-title-medium: 9px;
+  --padding-right-group-title-medium: 9px;
+  --font-size-group-title-medium: 14px;
+  --line-height-group-title-medium: 20px;
+
+  --padding-top-group-title-large: 4px;
+  --padding-bottom-group-title-large: 4px;
+  --padding-left-group-title-large: 11px;
+  --padding-right-group-title-large: 11px;
+  --font-size-group-title-large: 16px;
+  --line-height-group-title-large: 22px;
+
+  --font-style-group-title: normal;
+  --font-weight-group-title: 500;
+
+  // Generic variables
+
+  --selected-icon-size-small: 18px;
+  --selected-icon-padding-small: 3px;
+  --selected-icon-size-medium: 20px;
+  --selected-icon-padding-medium: 3px;
+  --selected-icon-size-large: 24px;
+  --selected-icon-padding-large: 4px;
+
+  --height-small: 24px;
+  --height-medium: 30px;
+  --height-large: 36px;
+
+  --color-default: var(--select-dropdown-option-color-default);
+  --color-active: var(--select-dropdown-option-color-active);
+  --background-hover: var(--select-dropdown-option-background-hover);
+  --color-disabled: var(--select-dropdown-option-color-disabled);
+
+}

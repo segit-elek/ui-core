@@ -1,0 +1,17 @@
+:host {
+  --width-small: var(--icon-width-small);
+  --height-small: var(--icon-height-small);
+  --padding-small: var(--icon-padding-small);
+  --stroke-width-small: var(--icon-stroke-width-small);
+
+  --width-medium: var(--icon-width-medium);
+  --height-medium: var(--icon-height-medium);
+  --padding-medium: var(--icon-padding-medium);
+  --stroke-width-medium: var(--icon-stroke-width-medium);
+
+  --width-large: var(--icon-width-large);
+  --height-large: var(--icon-height-large);
+  --padding-large: var(--icon-padding-large);
+  --stroke-width-large: var(--icon-stroke-width-large);
+
+}

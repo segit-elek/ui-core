@@ -1,0 +1,11 @@
+:host {
+  --border-color: var(--chip-border-color);
+  --background-color: var(--chip-background-color);
+  --background-color-active: var(--chip-background-color-active);
+  --background-color-disabled: var(--chip-background-color-disabled);
+
+  --label-color: var(--chip-label-color);
+  --label-color-disabled: var(--chip-label-color-disabled);
+  --label-color-hover: var(--chip-label-color-hover);
+  --label-color-active: var(--chip-label-color-active);
+}

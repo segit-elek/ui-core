@@ -1,0 +1,150 @@
+
+@import "input.vars";
+
+:host {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: text;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  color: var(--color);
+  transition: box-shadow 240ms ease;
+  input::placeholder {
+    color: var(--placeholder-color)
+  }
+}
+
+:host {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
+  //height: calc(var(--padding-top) + var(--padding-bottom) + var(--line-height));
+  input {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+    &::placeholder {
+      font-size: var(--font-size);
+      line-height: var(--line-height);
+    }
+  }
+}
+
+:host(.is-readonly) {
+  box-shadow: transparent 0 0 0 0;
+}
+:host(.is-disabled) {
+  color: var(--color-disabled)
+}
+
+
+:host(:not(.is-readonly)) {
+  z-index: 1;
+  box-shadow: var(--shadow-color);
+  background: var(--background);
+}
+:host(:not(.is-readonly):hover) {
+  box-shadow: var(--shadow-color-hover);
+  background: var(--background-hover);
+}
+:host(:not(.is-readonly).has-focus), :host(:not(.is-readonly)[focus-effect])  {
+  box-shadow: var(--shadow-color-focus);
+  background: var(--background-focus);
+}
+:host(:not(.is-readonly).is-disabled)  {
+  box-shadow: var(--shadow-color-disabled);
+  background: var(--background-disabled);
+}
+:host(:not(.is-readonly).has-error)  {
+  box-shadow: var(--shadow-color-error);
+  background: var(--background-error);
+}
+:host(:not(.is-readonly).has-error.has-focus)  {
+  box-shadow: var(--shadow-color-error-focused);
+  background: var(--background-error-focused);
+}
+input {
+  display: block;
+  border: none;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  &:focus {
+    outline: none;
+  }
+  -webkit-user-select: text; /* Chrome, Opera, Safari */
+  -moz-user-select: text; /* Firefox 2+ */
+  -ms-user-select: text; /* IE 10+ */
+  user-select: text; /* Standard syntax */
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  min-width: 0;
+  font-stretch: normal;
+  line-height: inherit;;
+  letter-spacing: normal;
+  background: transparent !important;
+  text-align: inherit;
+  color: inherit;
+}
+:host div {
+  min-width: 0;
+}
+.leading {
+  flex-basis: auto;
+  flex-shrink: 0;
+  margin-right: 1px;
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+
+  max-width: 100%;
+  justify-self: flex-start;
+  //display: flex;
+  justify-content: flex-start;
+  flex-wrap: inherit;
+}
+.trailing {
+  flex-shrink: 0;
+  justify-self: flex-end;
+  margin-left: auto;
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+
+  max-width: 100%;
+  //justify-self: flex-start;
+  //display: flex;
+  justify-content: flex-end;
+  flex-wrap: inherit;
+}
+
+:host .trailing {
+  //margin-right: var(--trailing-content-right-margin);
+}
+.main{
+  flex-basis: auto;
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  //width: 100%;
+  min-width: 100px;
+}
+
+:host .leading ::slotted(eui-icon), :host .trailing ::slotted(eui-icon) {
+  box-sizing: border-box;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  //margin-right: 2px;
+  padding: var(--icon-padding);
+  color: var(--icon-color);
+}

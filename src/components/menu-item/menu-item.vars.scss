@@ -1,0 +1,27 @@
+// TODO
+
+:host {
+  --active-color: var(--menu-item-active-color); // #0278e5 -> --cyan-6
+  --active-background-color: var(--menu-item-active-background-color); // #e2efff -> --cyan-1
+  --color: var(--menu-item-color); // #323e48 -> --gray-9
+  --hover-background-color: var(--menu-item-hover-background-color); // was #f2f7fe -> --gray-2
+  --font-weight: var(--menu-item-font-weight);
+
+  --padding-small: var(--menu-item-padding-small);
+  --font-size-small: var(--menu-item-font-size-small);
+  --line-height-small: var(--menu-item-line-height-small);
+  --marker-width-small: var(--menu-item-marker-width-small);
+  --marker-height-small: var(--menu-item-marker-height-small);
+
+  --padding-medium: var(--menu-item-padding-medium);
+  --font-size-medium: var(--menu-item-font-size-medium);
+  --line-height-medium: var(--menu-item-line-height-medium);
+  --marker-width-medium: var(--menu-item-marker-width-medium);
+  --marker-height-medium: var(--menu-item-marker-height-medium);
+
+  --padding-large: var(--menu-item-padding-large);
+  --font-size-large: var(--menu-item-font-size-large);
+  --line-height-large: var(--menu-item-line-height-large);
+  --marker-width-large: var(--menu-item-marker-width-large);
+  --marker-height-large: var(--menu-item-marker-height-large);
+}

@@ -1,0 +1,95 @@
+@import "select-dropdown.vars";
+
+// Select Dropdown
+// --------------------------------------------------
+
+:host {
+  /**
+   * @prop --background: Background of the select dropdown group
+   * @prop --background-activated: Background of the select dropdown button when pressed
+   * @prop --background-selected: Background of the selected select dropdown button
+   *
+   * @prop --color: Color of the select dropdown text
+   *
+   * @prop --min-width: Minimum width of the select dropdown
+   * @prop --width: Width of the select dropdown
+   * @prop --max-width: Maximum width of the select dropdown
+   *
+   * @prop --min-height: Minimum height of the select dropdown
+   * @prop --height: height of the select dropdown
+   * @prop --max-height: Maximum height of the select dropdown
+   *
+   */
+  --color: initial;
+  --min-width: auto;
+  --width: var(--select-dropdown-width);
+  --max-width: var(--select-dropdown-max-width);
+  --min-height: auto;
+  --height: 100%;
+  --max-height: calc(100% - (var(--ion-safe-area-top) + var(--ion-safe-area-bottom)));
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  //@include position(0, 0, 0, 0);
+
+  display: block;
+  position: fixed;
+
+  font-family: var(--select-dropdown-font-family);
+
+  touch-action: none;
+  user-select: none;
+  z-index: var(--z-index-overlay);
+}
+
+:host(.absolute-dropdown) {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  right: 0;
+}
+
+:host(.overlay-hidden) {
+  display: none;
+}
+
+
+.dropdown-wrapper {
+  z-index: var(--z-index-overlay-wrapper);
+
+  display: block;
+  //position: absolute;
+
+}
+.select-dropdown-wrapper {
+  border-radius: 3px;
+  //box-shadow: var(--box-shadow);
+  padding-top: var(--dropdown-padding-top);
+  padding-bottom: var(--dropdown-padding-bottom);
+  //background: var(--dropdown-background);
+  transform-origin: top center;
+}
+eui-input {
+  flex-wrap: wrap !important;
+}
+
+::slotted(eui-svg) {
+  display: none;
+}
+
+.input-wrapper {
+  padding: var(--filter-padding-top) var(--filter-padding-right) var(--filter-padding-bottom) var(--filter-padding-left);
+  margin-bottom: 2px;
+  border-bottom: 1px solid var(--filter-input-border-color);
+  input {
+    border: 0;
+    padding: 0;
+    width: 100%;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--filter-color);
+    font-size: var(--filter-font-size);
+    line-height: var(--filter-line-height);
+  }
+}

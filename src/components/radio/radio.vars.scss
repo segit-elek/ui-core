@@ -1,0 +1,35 @@
+:host {
+  --background: var(--checkbox-radio-background);
+  --background-checked: var(--checkbox-radio-background-checked);
+  --background-disabled: var(--checkbox-radio-background-disabled);
+  --background-partial: var(--checkbox-background-partial);
+
+  --shadow: var(--checkbox-radio-shadow);
+  --shadow-hover: var(--checkbox-radio-shadow-hover);
+  --shadow-focus: var(--checkbox-radio-shadow-checked-focus);
+  --shadow-active: var(--checkbox-radio-shadow-checked-active);
+  --shadow-error: var(--checkbox-radio-shadow-checked-error);
+
+  --color: var(--checkbox-radio-color);
+  --color-disabled: var(--checkbox-radio-color-disabled);
+
+  --label-font-size-small: var(--checkbox-radio-label-font-size-small);
+  --label-font-size-medium: var(--checkbox-radio-label-font-size-medium);
+  --label-font-size-large: var(--checkbox-radio-label-font-size-large);
+
+  --checkmark-size-small: var(--checkbox-radio-checkmark-size-small);
+  --checkmark-size-medium: var(--checkbox-radio-checkmark-size-medium);
+  --checkmark-size-large: var(--checkbox-radio-checkmark-size-large);
+
+  --padding-small: var(--checkbox-radio-padding-small);
+  --padding-medium: var(--checkbox-radio-padding-medium);
+  --padding-large: var(--checkbox-radio-padding-large);
+
+  --icon-size-small: var(--radio-icon-size-small);
+  --icon-size-medium: var(--radio-icon-size-medium);
+  --icon-size-large: var(--radio-icon-size-large);
+
+  --distance-small: var(--checkbox-radio-distance-small);
+  --distance-medium: var(--checkbox-radio-distance-medium);
+  --distance-large: var(--checkbox-radio-distance-large);
+}

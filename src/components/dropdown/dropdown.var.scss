@@ -1,0 +1,11 @@
+:host {
+  // TODO: replace colors
+  --box-shadow: var(--dropdown-box-shadow);
+  --background-color: var(--dropdown-background);
+
+  --padding: var(--dropdown-padding);
+  --border-radius: var(--dropdown-border-radius);
+  --font-size-small: var(--dropdown-font-size-small);
+  --font-size-medium: var(--dropdown-font-size-medium);
+  --font-size-large: var(--dropdown-font-size-large);
+}

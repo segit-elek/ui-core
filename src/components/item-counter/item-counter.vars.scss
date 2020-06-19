@@ -1,0 +1,29 @@
+:host {
+  --color: var(--item-counter-color);
+  --color-selected: var(--item-counter-color-selected);
+  --background-selected: var(--item-counter-background-selected);
+
+  --font-weight: var(--item-counter-font-weight);
+  --border-radius: var(--item-counter-border-radius);
+
+  --font-size-small: var(--item-counter-font-size-small);
+  --line-height-small: var(--item-counter-line-height-small);
+  --selected-padding-small: var(--item-counter-selected-padding-small);
+  --item-margin-small: var(--item-counter-item-margin-small);
+  --selected-margin-small: var(--item-counter-selected-margin-small);
+  --icon-margin-small: var(--item-counter-icon-margin-small);
+
+  --font-size-medium: var(--item-counter-font-size-medium);
+  --line-height-medium: var(--item-counter-line-height-medium);
+  --selected-padding-medium: var(--item-counter-selected-padding-medium);
+  --item-margin-medium: var(--item-counter-item-margin-medium);
+  --selected-margin-medium: var(--item-counter-selected-margin-medium);
+  --icon-margin-medium: var(--item-counter-icon-margin-medium);
+
+  --font-size-large: var(--item-counter-font-size-large);
+  --line-height-large: var(--item-counter-line-height-large);
+  --selected-padding-large: var(--item-counter-selected-padding-large);
+  --item-margin-large: var(--item-counter-item-margin-large);
+  --selected-margin-large: var(--item-counter-selected-margin-large);
+  --icon-margin-large: var(--item-counter-icon-margin-large);
+}

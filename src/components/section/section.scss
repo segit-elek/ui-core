@@ -1,0 +1,45 @@
+@import 'section.vars';
+
+:Host {
+  & > .header {
+    text-transform: uppercase;
+    box-shadow: var(--header-shadow);
+    background: var(--header-background-color);
+    border-radius: var(--header-border-radius);
+    color: var(--header-color);
+    font-weight: var(--header-font-weight);
+    font-size: var(--header-font-size);
+    line-height: var(--line-height-small-12);
+    display: flex;
+    align-items: center;
+    transition: 150ms all ease-in-out;
+    padding: var(--header-padding);
+    &.dark {
+      background: rgba(var(--header-background-color-dark), 0.72);
+    }
+    &.collapsible {
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  & > .body {
+    padding: var(--body-padding);
+    &.is-collapsed {
+      display: none;
+    }
+  }
+}
+.collapser {
+  height: var(--collapser-size);
+  width: var(--collapser-size);
+  font-size: 0;
+  display: block;
+  box-sizing: border-box;
+  margin-right: var(--collapser-margin);
+  eui-icon {
+    color: var(--collapser-color);
+    stroke-width: var(--collapser-stroke);
+    height: 100%;
+    width: 100%;
+  }
+}

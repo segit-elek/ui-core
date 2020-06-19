@@ -1,0 +1,16 @@
+:host {
+  --color: var(--menu-header-color);
+
+  --height-small: var(--menu-header-height-small);
+  --padding-small: var(--menu-header-padding-small);
+  --font-size-small: var(--menu-header-font-size-small);
+  --letter-spacing-small: var(--menu-header-letter-spacing-small);
+  --height-medium: var(--menu-header-height-medium);
+  --padding-medium: var(--menu-header-padding-medium);
+  --font-size-medium: var(--menu-header-font-size-medium);
+  --letter-spacing-medium: var(--menu-header-letter-spacing-medium);
+  --height-large: var(--menu-header-height-large);
+  --padding-large: var(--menu-header-padding-large);
+  --font-size-large: var(--menu-header-font-size-large);
+  --letter-spacing-large: var(--menu-header-letter-spacing-large);
+}

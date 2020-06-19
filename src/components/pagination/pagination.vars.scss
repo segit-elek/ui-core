@@ -1,0 +1,30 @@
+// TODO
+
+:host {
+  --selected-color:  var(--pagination-selected-color);
+  --selected-background-color:  var(--pagination-selected-background-color);
+  --color:  var(--pagination-color); // #505669 -> gray-6
+
+  --selected-border-radius: var(--pagination-selected-border-radius);
+  --inner-font-weight: var(--pagination-inner-font-weight);
+
+  --selected-margin-small: var(--pagination-selected-margin-small);
+  --selected-padding-small: var(--pagination-selected-padding-small);
+  --font-size-small: var(--pagination-font-size-small);
+  --line-height-small: var(--pagination-line-height-small);
+  --all-margin-left-small: var(--pagination-all-margin-left-small);
+  --icon-margin-small: var(--pagination-icon-margin-small);
+  --selected-margin-medium: var(--pagination-selected-margin-medium);
+  --selected-padding-medium: var(--pagination-selected-padding-medium);
+  --font-size-medium: var(--pagination-font-size-medium);
+  --line-height-medium: var(--pagination-line-height-medium);
+  --all-margin-left-medium: var(--pagination-all-margin-left-medium);
+  --icon-margin-medium: var(--pagination-icon-margin-medium);
+  --selected-margin-large: var(--pagination-selected-margin-large);
+  --selected-padding-large: var(--pagination-selected-padding-large);
+  --font-size-large: var(--pagination-font-size-large);
+  --line-height-large: var(--pagination-line-height-large);
+  --all-margin-left-large: var(--pagination-all-margin-left-large);
+  --icon-margin-large: var(--pagination-icon-margin-large);
+
+}

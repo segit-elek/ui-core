@@ -1,0 +1,6 @@
+
+
+:host {
+  --center-width: 300px;
+  --left-right-width: calc(50% - (var(--center-width) / 2));
+}

@@ -1,0 +1,94 @@
+@import 'checkbox.vars';
+/* The container */
+:host {
+  display: flex;
+  font-size: 0;
+  white-space: nowrap;
+  outline: none;
+  .container {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--padding);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  span.checkbox-label{
+    font-size: var(--label-font-size);
+  }
+  .checkmark-outer {
+    border-radius: calc(var(--border-radius) + 1px);
+    padding: var(--border-width);
+    background-color: var(--border-color);
+  }
+  &:not(.disabled) .checkmark-outer:hover {
+    box-shadow: var(--shadow-hover);
+
+  }
+  .checkmark {
+    box-shadow: rgba(var(--focus-shadow-color), 0.5) 0 0 0 0px;
+
+    position: relative;
+    display: block;
+    height: var(--checkmark-size);
+    width: var(--checkmark-size);
+    background-color: var(--background);
+    border-radius: var(--border-radius);
+    transition: 240ms all ease;
+  }
+  &.is-checked, &.is-partial {
+    .checkmark {
+      background-color: var(--background-checked);
+    }
+  }
+  &.has-focus:not(.disabled) {
+    .checkmark {
+      box-shadow: rgba(var(--focus-shadow-color), 0.5) 0 0 0 3px;
+      //box-shadow: var(--hover-shadow-color) 0 0 3px;
+    }
+  }
+  &.has-error {
+    .checkmark {
+      box-shadow: var(--shadow-error);
+    }
+  }
+
+
+  &.has-label {
+    .checkmark-outer{
+      margin-right: var(--distance);
+    }
+  }
+
+  &.disabled {
+    .container {
+      cursor: default;
+
+    }
+    //pointer-events: none;
+    .checkmark-outer {
+      padding: var(--border-width);
+    }
+    &.is-checked .checkmark, &.is-partial .checkmark{
+      background-color: var(--background-disabled-checked);
+
+    }
+    .checkmark {
+      background-color: var(--background-disabled);
+      eui-icon {
+
+        color: var(--color-disabled);
+      }
+    }
+  }
+  eui-icon.check {
+    color: var(--color);
+    padding: var(--checkmark-padding);
+    width: 100%;
+    height: 100%;
+    stroke-width: var(--checkmark-stroke);
+  }
+}

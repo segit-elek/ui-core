@@ -1,0 +1,28 @@
+:host {
+  --label-line-height-small: var(--field-label-line-height-small);
+  --error-line-height-small: var(--field-error-line-height-small);
+  --label-line-height-medium: var(--field-label-line-height-medium);
+  --error-line-height-medium: var(--field-error-line-height-medium);
+  --label-line-height-large: var(--field-label-line-height-large);
+  --error-line-height-large: var(--field-error-line-height-large);
+
+  --label-font-size-small: var(--field-label-font-size-small);
+  --error-font-size-small: var(--field-error-font-size-small);
+  --label-font-size-medium: var(--field-label-font-size-medium);
+  --error-font-size-medium: var(--field-error-font-size-medium);
+  --label-font-size-large: var(--field-label-font-size-large);
+  --error-font-size-large: var(--field-error-font-size-large);
+
+  --label-distance-small: var(--field-label-distance-small);
+  --error-distance-small: var(--field-error-distance-small);
+  --label-distance-medium: var(--field-label-distance-medium);
+  --error-distance-medium: var(--field-error-distance-medium);
+  --label-distance-large: var(--field-label-distance-large);
+  --error-distance-large: var(--field-error-distance-large);
+
+  --error-color: var(--field-error-color);
+  --label-color: var(--field-label-color);
+
+  --padding: var(--field-padding);
+  --emphasised-label-font-weight: var(--field-emphasised-label-font-weight);
+}

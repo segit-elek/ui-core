@@ -1,0 +1,136 @@
+@import 'drawer.vars';
+
+:host {
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.drawer, .main {
+  padding: var(--main-padding);
+  box-sizing: border-box;
+}
+
+:host([type='squish']) {
+  display: flex;
+  .drawer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms all ease-in-out;
+    padding: 0;
+    &.open {
+      padding: var(--squish-padding);
+      width: var(--side-width);
+      overflow: auto;
+      opacity: 1;
+      pointer-events: all;
+      position: relative;
+      height: 100%;
+    }
+  }
+  .left-drawer {
+    @extend .drawer;
+  }
+  .right-drawer {
+    @extend .drawer;
+  }
+  .main {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+  }
+}
+:host([type='push']) {
+  display: flex;
+  .drawer {
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    width: var(--side-width);
+    transition: 200ms all ease-in-out;
+    background: var(--background-color);
+    height: 100%;
+  }
+  .left-drawer {
+    @extend .drawer;
+    left: 0;
+    transform: translateX(-200px);
+    &.open {
+      transform: translateX(0px);
+    }
+  }
+  .right-drawer {
+    @extend .drawer;
+    right: 0;
+    transform: translateX(200px);
+    &.open {
+      transform: translateX(0px);
+    }
+  }
+  .main {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    transition: 200ms all ease-in-out;
+    &.left-open, &.right-open {
+      overflow: hidden;
+    }
+    &.left-open {
+      transform: translateX(200px);
+    }
+    &.right-open {
+      transform: translateX(-200px);
+    }
+  }
+}
+:host([type='overlay']) {
+  .drawer {
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    width: var(--side-width);
+    transition: 200ms all ease-in-out;
+    background: var(--background-color);
+    height: 100%;
+  }
+  .left-drawer {
+    @extend .drawer;
+    left: 0;
+    transform: translateX(-200px);
+    &.open {
+      transform: translateX(0px);
+    }
+  }
+  .right-drawer {
+    @extend .drawer;
+    right: 0;
+    transform: translateX(200px);
+    &.open {
+      transform: translateX(0px);
+    }
+  }
+  .main {
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    &.left-open, &.right-open {
+      overflow: hidden;
+    }
+  }
+  .overlay {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(var(--overlay-background-color),0.22);
+  }
+}

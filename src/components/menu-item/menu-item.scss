@@ -1,0 +1,98 @@
+@import 'menu-item.vars';
+
+
+:host {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  align-items: center;
+  padding: var(--padding);
+  height: 100%;
+  box-sizing: border-box;
+  //height: 28px;
+  font-size: var(--font-size);
+  line-height: var(--font-size);
+  font-weight: var(--font-weight);
+  .trailing{
+    margin-left: auto;
+    justify-self: flex-end;
+  }
+  user-select: none;
+  * {
+    color: var(--color);
+  }
+}
+
+
+:host(:hover) {
+  background: var(--hover-background-color);
+  cursor: pointer;
+}
+:host(.selected:not(.bottom-line)), :host(:not(.bottom-line).selected) {
+  background: var(--active-background-color);
+  position: relative;
+  &:before {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: var(--marker-width);
+    content: '';
+    position: absolute;
+    background: var(--active-color);
+  }
+}
+
+:host(.selected.bottom-line), :host(.bottom-line.selected) {
+  background: var(--active-background-color);
+  position: relative;
+  &:before {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--marker-height);
+    content: '';
+    position: absolute;
+    background: var(--active-color);
+  }
+}
+//:host(.selected:not(.bottom-line):hover), :host(.selected:not(.bottom-line):hover) {
+//  background: var(--active-background-color);
+//  position: relative;
+//  &:before {
+//    left: 0;
+//    top: 0;
+//    bottom: 0;
+//    width: 4px;
+//    content: '';
+//    position: absolute;
+//    background: var(--active-color);
+//  }
+//}
+//:host(.selected.bottom-line:hover), :host(.selected.bottom-line:hover) {
+//  background: var(--active-background-color);
+//  position: relative;
+//  &:before {
+//    left: 0;
+//    right: 0;
+//    bottom: 0;
+//    height: 2px;
+//    content: '';
+//    position: absolute;
+//    background: var(--active-color);
+//  }
+//}
+:host(.disabled) {
+  opacity: 0.5;
+    cursor: default;
+    background: initial;
+}
+
+:host(.checked) {
+  color: var(--active-color);
+  * {
+    color: var(--active-color);
+  }
+}
+.dropdown-wrapper {
+  display: none;
+}

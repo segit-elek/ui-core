@@ -1,0 +1,55 @@
+//@import "../../themes/ionic.globals";
+@import "../select/select.vars";
+
+// Select Dropdown
+// --------------------------------------------------
+
+:host {
+  --select-dropdown-width: 100%;
+  --select-dropdown-max-width: 500px;
+
+  --z-index-overlay: 1001;
+  --z-index-overlay-wrapper: 10;
+
+  --select-dropdown-font-family: var(--font-family);
+
+
+  --select-border-radius: 3px;
+
+
+  --select-font-size: 14px;
+  --select-font-weight: normal;
+  --select-font-style: normal;
+  --select-line-height: 18px;
+
+  --dropdown-padding-top: 2px;
+  --dropdown-padding-bottom: 2px;
+
+
+  --filter-padding-left-small: 7px;
+  --filter-padding-right-small: 7px;
+  --filter-padding-top-small: 3px;
+  --filter-padding-bottom-small: 5px;
+
+  --filter-padding-left-medium: 9px;
+  --filter-padding-right-medium: 9px;
+  --filter-padding-top-medium: 3px;
+  --filter-padding-bottom-medium: 5px;
+
+  --filter-padding-left-large: 11px;
+  --filter-padding-right-large: 11px;
+  --filter-padding-top-large: 3px;
+  --filter-padding-bottom-large: 5px;
+
+  --filter-font-size-small: 14px;
+  --filter-line-height-small: var(--line-height-small-14);
+  --filter-font-size-medium: 14px;
+  --filter-line-height-medium: var(--line-height-medium-14);
+  --filter-font-size-large: 16px;
+  --filter-line-height-large: var(--line-height-large-16);
+
+
+  --filter-color: var(--select-dropdown-filter-color);
+  --filter-input-border-color: var(--select-dropdown-filter-input-border-color);
+
+}

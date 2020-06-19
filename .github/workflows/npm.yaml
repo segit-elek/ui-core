@@ -1,0 +1,66 @@
+name: npm release
+on:
+  push:
+    branches:
+      - master
+      - next
+  pull_request:
+    branches:
+      - master
+      - next
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test
+      - name: Run build
+        run: npm run build
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
+
+#name: publish to npm
+#
+#on:
+#  # Trigger the workflow on push or pull request,
+#  # but only for the master branch
+#  push:
+#    branches:
+#      - master
+#  pull_request:
+#    branches:
+#      - master
+#
+#jobs:
+#  publish:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v1
+#      - uses: actions/setup-node@v1
+#        with:
+#          node-version: 12
+#          registry-url: 'https://registry.npmjs.org'
+#      - run: npm install --ignore-scripts
+#        env:
+#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+#      - run: node node_modules/puppeteer/install.js
+#      - run: npm test
+#      - run: npm run build
+#      - run: npm publish --access public
+#        env:
+#          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+#      - run: npm publish --access public --registry=https://npm.pkg.github.com --scope=@enterpriseui
+#        env:
+#          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

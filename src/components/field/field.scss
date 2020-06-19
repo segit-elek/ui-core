@@ -1,0 +1,43 @@
+
+@import 'field.vars';
+
+:host {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  max-width: 100%;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  .error-message {
+    color: var(--error-color);
+    font-size: var(--error-font-size);
+    margin-top: var(--error-distance);
+    line-height: var(--error-line-height);
+    min-height: var(--error-line-height);
+  }
+  .field-label {
+    color: var(--label-color);
+    margin-bottom: var(--label-distance);
+    font-size: var(--label-font-size);
+    line-height: var(--label-line-height);
+  }
+
+  font-size: 0;
+}
+:Host(.emphasised-label) {
+  .field-label {
+    color: var(--label-color-emphasised);
+    font-weight: var(--emphasised-label-font-weight);
+  }
+}
+:Host(.label-above) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#options{
+  display: none;
+}
+

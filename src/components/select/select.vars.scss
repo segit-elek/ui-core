@@ -1,0 +1,73 @@
+//@import "../../themes/ionic.globals";
+//:host {
+//  --select-padding-top: 2px;
+//  --select-padding-left: 6px;
+//  --select-padding-right: 6px;
+//  --select-padding-bottom: 2px;
+//
+//  --select-border-radius: 3px;
+//
+//  --select-border-color-default: #E3E8EE;
+//  --select-border-color-hover: #C1C9D2;
+//
+//  --select-font-size: 14px;
+//  --select-font-weight: normal;
+//  --select-font-style: normal;
+//  --select-line-height: 18px;
+//
+//}
+
+
+
+:host {
+  --padding-left-small: 3px;
+  --padding-right-small: 3px;
+  --padding-top-small: 2px;
+  --padding-bottom-small: 2px;
+  --padding-left-medium: 4px;
+  --padding-right-medium: 4px;
+  --padding-top-medium: 4px;
+  --padding-bottom-medium: 4px;
+  --padding-left-large: 5px;
+  --padding-right-large: 5px;
+  --padding-top-large: 4px;
+  --padding-bottom-large: 4px;
+  --font-size-small: 14px;
+  --line-height-small: var(--line-height-small-14);
+  --font-size-medium: 14px;
+  --line-height-medium: var(--line-height-medium-14);
+  --font-size-large: 16px;
+  --line-height-large: var(--line-height-large-16);
+  --border-radius: 3px;
+
+  --color: var(--select-color);
+  --placeholder-color: var(--select-placeholder-color);
+  --color-disabled: var(--select-color-disabled);
+  --shadow-color: var(--select-shadow-color);
+  --shadow-color-hover: var(--select-shadow-color-hover);
+  --shadow-color-focus: var(--select-shadow-color-focus);
+  --shadow-color-disabled: var(--select-shadow-color-disabled);
+  --shadow-color-error: var(--select-shadow-color-error);
+  --shadow-color-error-focused: var(--select-shadow-color-error-focused);
+  --background-color: var(--select-background-color);
+  --background-color-focus: var(--select-background-color-focus);
+  --background-color-hover: var(--select-background-color-hover);
+  --background-color-disabled: var(--select-background-color-disabled);
+  --background-color-error: var(--select-background-color-error);
+  --background-color-error-focused: var(--select-background-color-error-focused);
+  --hover-bg-color: var(--select-hover-bg-color);
+  --icon-color: var(--select-icon-color);
+  --icon-color-hover: var(--select-icon-color-hover);
+
+  --select-icon-size-small: 18px;
+  --select-icon-padding-small: 3px;
+  --select-icon-size-medium: 20px;
+  --select-icon-padding-medium: 3px;
+  --select-icon-size-large: 24px;
+  --select-icon-padding-large: 3px;
+  --height-small: 22px;
+  --height-medium: 28px;
+  --height-large: 34px;
+
+
+}

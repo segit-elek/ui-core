@@ -1,0 +1,39 @@
+@import "item-counter.vars";
+
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  * {
+    user-select: none;
+  }
+}
+span  {
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--color);
+  &.selected-page-number {
+    display: inline-block;
+    padding: var(--selected-padding);
+    margin: var(--selected-margin);
+    font-style: normal;
+    font-weight: var(--font-weight);
+    background: var(--background-selected);
+    border-radius: var(--border-radius);
+    color: var(--color-selected);
+  }
+  &.all-page-number {
+    font-weight: var(--font-weight);
+    font-style: normal;
+    display: inline-block;
+    margin: var(--item-margin);
+    color: var(--color);
+  }
+}
+eui-icon {
+  margin: var(--icon-margin);
+}

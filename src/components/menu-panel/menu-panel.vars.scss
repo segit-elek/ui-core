@@ -1,0 +1,16 @@
+:host {
+  --color: var(--menu-panel-color); // #323e48 -> --gray-9
+
+  --padding-small: var(--menu-panel-padding-small);
+  --title-font-size-small: var(--menu-panel-title-font-size-small);
+  --height-small: var(--menu-panel-height-small);
+  --left-margin-small: var(--menu-panel-left-margin-small);
+  --padding-medium: var(--menu-panel-padding-medium);
+  --title-font-size-medium: var(--menu-panel-title-font-size-medium);
+  --height-medium: var(--menu-panel-height-medium);
+  --left-margin-medium: var(--menu-panel-left-margin-medium);
+  --padding-large: var(--menu-panel-padding-large);
+  --title-font-size-large: var(--menu-panel-title-font-size-large);
+  --height-large: var(--menu-panel-height-large);
+  --left-margin-large: var(--menu-panel-left-margin-large);
+}

@@ -1,0 +1,39 @@
+@import 'pagination.vars';
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  * {
+    user-select: none;
+  }
+  span  {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--color);
+    &.selected-page-number {
+      display: inline-block;
+      padding: var(--selected-padding);
+      margin: var(--selected-margin);
+      font-style: normal;
+      font-weight: var(--inner-font-weight);
+      background: var(--selected-background-color);
+      border-radius: var(--selected-border-radius);
+      color: var(--selected-color);
+    }
+    &.all-page-number {
+      font-weight: var(--inner-font-weight);
+      font-style: normal;
+      display: inline-block;
+      margin-left: var(--all-margin-left);
+      color: var(--color);
+    }
+  }
+  eui-icon {
+    margin: var(--icon-margin);
+    cursor: pointer;
+  }
+
+}

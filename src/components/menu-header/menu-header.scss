@@ -1,0 +1,20 @@
+@import 'menu-header.vars';
+
+
+:host {
+  padding: var(--padding);
+  box-sizing: border-box;
+  height: var(--height);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: var(--font-size);
+  letter-spacing: var(--letter-spacing);
+  background: transparent;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: var(--color);
+}

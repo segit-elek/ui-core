@@ -1,0 +1,30 @@
+// Todo: SCSS variables vs CSS variables működés + compile
+
+@import 'variables';
+
+.hidden{
+  display: none !important;
+}
+html {
+  height: 100% !important;
+  position: relative;
+  overflow: auto !important;
+}
+body {
+  background: #E3E8EE;
+  margin: 0;
+  height: 100% !important;
+  position: relative;
+  overflow: auto !important;
+}
+
+html, body, :host, :host * {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-overflow-scrolling: touch;
+
+}

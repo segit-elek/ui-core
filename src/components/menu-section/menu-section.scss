@@ -1,0 +1,10 @@
+
+
+:host([collapsible]) eui-menu-header{
+  cursor: pointer;
+}
+:host {
+  .content.collapsed {
+    display: none;
+  }
+}
